@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Form Example</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2>Payment form example</h2>
+    <div class="alert alert-danger" role="alert">
+      Some fields are missing
+    </div>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="cardNumber">Card #</label>
+          <input type="text" class="form-control" id="cardNumber" placeholder="XXXXXXXXXXXXXXXX" required>
+        </div>
+        <div class="form-group col-md-3">
+          <label for="cvc">CVC #</label>
+          <input type="text" class="form-control" id="cvc" placeholder="0000" required>
+        </div>
+        <div class="form-group col-md-3">
+          <label for="amount">Amount</label>
+          <input type="text" class="form-control" id="amount" placeholder="$ Amount" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="firstName">First Name</label>
+          <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="lastName">Last Name</label>
+          <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="city">City</label>
+          <input type="text" class="form-control" id="city" placeholder="City" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="state">State</label>
+          <select id="state" class="form-control" required>
+            <option selected>Pick a state</option>
+            <option>Cordoba</option>
+            <option>Madrid</option>
+            <option>Sevilla</option>
+            <option>Malaga</option>
+            <option>Barcelona</option>
+            <option>Valencia</option>
+          </select>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="postalCode">Postal Code</label>
+          <input type="text" class="form-control" id="postalCode" placeholder="Postal Code" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label>We accept:</label>
+          <div class="card-image">
+            <label class="card-option">
+              <input type="radio" name="payment-method" value="visa">
+              <i class="fab fa-cc-visa fa-2x"></i>
+            </label>
+            <label class="card-option">
+              <input type="radio" name="payment-method" value="mastercard">
+              <i class="fab fa-cc-mastercard fa-2x"></i>
+            </label>
+            <label class="card-option">
+              <input type="radio" name="payment-method" value="amex">
+              <i class="fab fa-cc-amex fa-2x"></i>
+            </label>
+            <label class="card-option">
+              <input type="radio" name="payment-method" value="discover">
+              <i class="fab fa-cc-discover fa-2x"></i>
+            </label>
+          </div>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" placeholder="Add any notes here." rows="3"></textarea>
+        </div>
+      </div>
+      <button type="button" class="btn btn-secondary">Cancel</button>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
